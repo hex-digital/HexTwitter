@@ -21,7 +21,8 @@ This integration requires abraham/twitteroauth, version ^0.6.4.
 ## Initial Installation
 
 Simply clone this repository into your project (we recommend in a classes/ folder),
-then edit the credentials.php file to include your credentials (from apps.twitter.com).
+then edit the credentials.php file to include your credentials (from apps.twitter.com).  
+Ensure this credentials.php file is added to your .gitignore.
 
 Next, open the settings.php and enter the user ID for the twitter handle you wish to
 specify as the default.  
