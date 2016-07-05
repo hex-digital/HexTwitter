@@ -31,6 +31,7 @@ class Twitter implements FactoryInterface {
     protected $connection;
     protected $error_reporting;
     public function __construct( $error_reporting = true ) {
+        // Check that we have everything we need to correctly function
         $this->error_reporting = $error_reporting;
         $dir = dirname(__FILE__);
         $error_string = "";
