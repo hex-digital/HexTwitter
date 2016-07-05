@@ -30,21 +30,18 @@ class Twitter implements FactoryInterface {
             include $dir . "/settings.php";
         } else {
             $error_string .= 'File not found: settings.php.<br>';
-            $setup_error = true;
         }
         if ( file_exists( $dir . "/credentials.php" ) ) {
             include $dir . "/credentials.php";
         }  else {
             $error_string .= 'File not found: credentials.php.<br>';
-            $setup_error = true;
         }
         if ( ! defined( 'TWITTER_CONSUMER_KEY' ) || ! defined( 'TWITTER_CONSUMER_SECRET' ) ||
              ! defined( 'TWITTER_ACCESS_TOKEN' ) || ! defined( 'TWITTER_ACCESS_TOKEN_SECRET' ) ) {
             $error_string .= 'One or more credential tokens are not set.<br>';
-            $setup_error = true;
         }
         if ( ! is_development() ) {
-            if ( isset( $setup_error ) && $setup_error === true && $this->error_reporting === true) {
+            if ( isset( $error_string ) && strlen( $error_string ) > 0 && $this->error_reporting === true) {
                 echo $error_string;
                 echo 'Please ensure HexTwitter is correctly set up. <a href="http://github.com/hex-digital/HexTwitter">Visit the github repo for installation instructions</a><br>
                     To squash this message, turn off error messaging via the Twitter constructor.';
