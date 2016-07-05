@@ -31,9 +31,13 @@ Just setup the require and repositories section of your composer.json file as be
             "url": "https://github.com/hex-digital/HexTwitter"
         }
     ]
-    
-Now run `php composer.phar install` to load the dependencies for your project, and import them using
-the autoloader:
+
+Now run `php composer.phar install` to load the dependencies for your project. You may be told
+'Your GitHub credentials are required to fetch private repository metadata (https://github.com/hex-digital/HexTwitter)',
+in which case copy the URL shown and follow the instructions to set up a token, then copy and paste it back into
+the terminal.
+
+Once finished, you can import the new dependencies using the autoloader:
 
     require "vendor/autoload.php";
 
