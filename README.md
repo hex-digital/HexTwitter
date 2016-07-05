@@ -15,16 +15,29 @@ updates, new features and changes can be created, and then easily propogated.
 ## Dependencies
 
 This integration requires abraham/twitteroauth, version ^0.6.4.
-[Instructions for installing this can be found here](https://twitteroauth.com/).
 
 
 ## Initial Installation
 
-Simply clone this repository into your project (we recommend in a classes/ folder),
-then edit the credentials.php file to include your credentials (from apps.twitter.com).  
-Ensure this credentials.php file is added to your .gitignore.
+The fastest way to install the Hex Twitter package is with [Composer](https://getcomposer.org/).
+Just setup the require and repositories section of your composer.json file as below:
 
-Next, open the settings.php and enter the user ID for the twitter handle you wish to
+    "require": {
+        "hex-digital/HexTwitter": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/hex-digital/HexTwitter"
+        }
+    ]
+    
+Now run `php composer.phar install` to load the dependencies for your project, and import them using
+the autoloader:
+
+    require "vendor/autoload.php";
+
+Now, open the settings.php and enter the user ID for the twitter handle you wish to
 specify as the default.  
 Also check the default number of tweets to grab when not specified
 in the function call.
