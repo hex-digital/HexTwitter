@@ -5,6 +5,8 @@
  * @link      http://www.hexdigial.com
  * @copyright Copyright (c) 2016 Hex Digital (http://www.hexdigital.com)
  * @license   http://www.hexdigital.com/license License
+ * @since     1.0.0
+ * @version   1.0.0
  */
 namespace HexTwitter;
 use Abraham\TwitterOAuth\TwitterOAuth;
