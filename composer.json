@@ -1,0 +1,26 @@
+{
+    "name": "hex-digital/HexTwitter",
+    "homepage": "https://github.com/hex-digital/HexTwitter",
+    "authors": [
+        {
+            "name": "Oliver Tappin",
+            "email": "ollie@hexdigital.com"
+        },
+        {
+            "name": "Jamie Warburton",
+            "email": "jamie@hexdigital.com"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/hex-digital/HexTwitter",
+        "issues": "https://github.com/hex-digital/HexTwitter/issues"
+    },
+    "require": {
+        "abraham/twitteroauth": "^0.6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "HexTwitter\\": "classes/HexTwitter"
+        }
+    }
+}
