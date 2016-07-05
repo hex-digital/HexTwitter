@@ -14,15 +14,6 @@ use HexTwitter\Cache;
 use HexTwitter\Cache\FactoryInterface;
 use HexTwitter\Units\Time;
 
-$dir = dirname(__FILE__);
-
-if ( file_exists( $dir . "/settings.php" ) ) {
-    
-}
-if ( file_exists( $dir . "credentials.php" ) ) {
-    
-}
-
 class Twitter implements FactoryInterface {
     const CACHE_KEY = 'mcb_twitter';
     const CACHE_FILE = 'twitter.json';
