@@ -40,7 +40,7 @@ class Twitter implements FactoryInterface {
              ! defined( 'TWITTER_ACCESS_TOKEN' ) || ! defined( 'TWITTER_ACCESS_TOKEN_SECRET' ) ) {
             $error_string .= 'One or more credential tokens are not set.<br>';
         }
-        if ( ! is_development() ) {
+        if ( ! is_production() ) {
             if ( isset( $error_string ) && strlen( $error_string ) > 0 && $this->error_reporting === true) {
                 echo $error_string;
                 echo 'Please ensure HexTwitter is correctly set up. <a href="http://github.com/hex-digital/HexTwitter">Visit the github repo for installation instructions</a><br>
