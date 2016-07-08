@@ -9,7 +9,7 @@
  */
 namespace HexTwitter;
 use HexTwitter\Cache\Wordpress;
-use Core\Cache\Memcached;
+use HexTwitter\Cache\Memcached;
 class Cache {
     /**
      * Returns a new instance of the caching agent that is available on the

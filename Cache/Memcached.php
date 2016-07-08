@@ -7,7 +7,7 @@
  * @license   http://www.hexdigital.com/license License
  * @since     1.0.0
  */
-namespace Core\Cache;
+namespace HexTwitter\Cache;
 class Memcached implements CacheInterface {
     protected $cache;
     public function cache() {
