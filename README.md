@@ -27,7 +27,7 @@ Just setup the require and repositories section of your composer.json file as be
     },
     "repositories": [
         {
-            "type": "vcs",
+            "type": "git",
             "url": "https://github.com/hex-digital/HexTwitter"
         }
     ]
